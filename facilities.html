@@ -3,213 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Falimees facilities — high-speed Wi-Fi, furnished rooms, laundry, food support, housekeeping, security, and more. Everything a student needs to thrive." />
+  <meta name="description" content="Falimees facilities — high-speed Wi-Fi, furnished rooms, laundry, food & mess support, housekeeping, security, power backup and more. Student accommodation Kochi." />
   <title>Facilities | Falimees — Your Nearest Home</title>
   <link rel="icon" type="image/png" href="images/icon.png" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
 <nav class="navbar" id="navbar">
   <div class="container">
     <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <img src="images/logo.png" alt="Falimees" class="logo-img" />
-      </a>
+      <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Falimees" /></a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="facilities.html" class="active">Facilities</a></li>
         <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="facilities.html" class="active">Facilities</a></li>
         <li><a href="community.html">Community</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="nav-cta">
-        <a href="contact.html" class="btn-primary">Book a Room</a>
-        <button class="hamburger" id="hamburger" aria-label="Open menu">
-          <span></span><span></span><span></span>
-        </button>
+      <div class="nav-actions">
+        <a href="tel:+919249048620" class="nav-call-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>Call Now</a>
+        <a href="contact.html" class="nav-book-btn">Book a Room</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
     </div>
   </div>
 </nav>
-
 <div class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="facilities.html">Facilities</a>
-  <a href="rooms.html">Rooms</a>
-  <a href="community.html">Community</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-  <a href="contact.html" style="margin-top:8px;background:var(--brand-green);padding:12px 24px;border-radius:50px;text-align:center;font-weight:600;color:var(--text);">Book a Room</a>
+  <a href="index.html">Home</a><a href="rooms.html">Rooms</a><a href="facilities.html">Facilities</a>
+  <a href="community.html">Community</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  <div class="mobile-menu-actions">
+    <a href="tel:+919249048620" class="btn-call">📞 Call Now</a>
+    <a href="contact.html" class="btn-primary">Book a Room</a>
+  </div>
 </div>
 
-<!-- Page Header -->
-<section style="padding: 140px 0 80px; background: var(--brand-green-pale);">
+<section class="page-header page-header-bg-green">
   <div class="container">
     <div class="section-tag">What We Offer</div>
-    <h1 class="section-title" style="font-size: clamp(32px, 5vw, 52px); margin-bottom: 16px;">Everything Included,<br>No Surprises</h1>
-    <p class="section-sub">Falimees isn't just a room — it's a complete living experience designed around student needs. Every facility is here to make your daily life effortless.</p>
+    <h1 class="section-title" style="font-size:clamp(30px,5vw,50px);margin-bottom:16px;">Everything Included,<br>No Surprises</h1>
+    <p class="section-sub">Falimees isn't just a room — it's a complete living experience. Every facility is here to make your daily life effortless so you can focus on what matters.</p>
   </div>
 </section>
 
-<!-- Core Facilities Grid -->
-<section style="padding: 80px 0;">
+<section style="padding:80px 0;">
   <div class="container">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+    <div class="facility-grid">
 
-      <div class="why-card fade-up" style="padding: 36px 28px;">
-        <div class="why-icon" style="font-size:28px; width:64px; height:64px;">📶</div>
-        <h3 style="font-size:20px; margin-bottom:12px;">High-Speed Wi-Fi</h3>
-        <p>Reliable, high-speed internet connectivity throughout the building — in your room, common areas, and study spaces. Designed for streaming, video calls, and research without lag.</p>
+      <div class="facility-card-full fade-up">
+        <div class="fc-icon">📶</div>
+        <h3>High-Speed Wi-Fi</h3>
+        <p>Reliable, high-speed internet throughout the building — in your room, common areas, and study spaces. Designed for streaming, video calls, and research without lag.</p>
       </div>
 
-      <div class="why-card fade-up" style="padding: 36px 28px; transition-delay:0.05s">
-        <div class="why-icon" style="font-size:28px; width:64px; height:64px;">🏠</div>
-        <h3 style="font-size:20px; margin-bottom:12px;">Fully Furnished Rooms</h3>
-        <p>Move in with nothing but your belongings. Rooms come fully furnished with a comfortable bed, wardrobe, study table, and chair. Everything is well-maintained and clean.</p>
+      <div class="facility-card-full fade-up" style="transition-delay:0.05s;">
+        <div class="fc-icon">🏠</div>
+        <h3>Fully Furnished Rooms</h3>
+        <p>Move in with nothing but your belongings. Rooms come with a comfortable bed, wardrobe, study table, and chair — all well-maintained and clean.</p>
       </div>
 
-      <div class="why-card fade-up" style="padding: 36px 28px; transition-delay:0.1s">
-        <div class="why-icon" style="font-size:28px; width:64px; height:64px;">🍽️</div>
-        <h3 style="font-size:20px; margin-bottom:12px;">Food & Mess Support</h3>
-        <p>Wholesome, home-style meals prepared for student schedules. Breakfast, lunch, and dinner options available. Nutritious food so you never have to worry about cooking.</p>
+      <div class="facility-card-full fade-up" style="transition-delay:0.1s;">
+        <div class="fc-icon">🍽️</div>
+        <h3>Food & Mess Support</h3>
+        <p>Wholesome, home-style meals prepared for student schedules. Nutritious food so you never have to worry about cooking or going hungry.</p>
       </div>
 
-      <div class="why-card fade-up" style="padding: 36px 28px; transition-delay:0.15s">
-        <div class="why-icon" style="font-size:28px; width:64px; height:64px;">👕</div>
-        <h3 style="font-size:20px; margin-bottom:12px;">Laundry Service</h3>
-        <p>Convenient in-house laundry facilities available to all residents. No need to travel out or spend extra — do your laundry on your schedule right at home.</p>
+      <div class="facility-card-full fade-up" style="transition-delay:0.15s;">
+        <div class="fc-icon">👕</div>
+        <h3>Laundry Service</h3>
+        <p>In-house laundry facilities available to all residents. Convenient and right on the premises — no need to travel out or spend extra.</p>
       </div>
 
-      <div class="why-card fade-up" style="padding: 36px 28px; transition-delay:0.2s">
-        <div class="why-icon" style="font-size:28px; width:64px; height:64px;">🧹</div>
-        <h3 style="font-size:20px; margin-bottom:12px;">Regular Housekeeping</h3>
-        <p>Rooms and all common areas are cleaned and maintained on a regular schedule. You focus on your academics — we keep the space fresh and hygienic.</p>
+      <div class="facility-card-full fade-up" style="transition-delay:0.2s;">
+        <div class="fc-icon">🧹</div>
+        <h3>Regular Housekeeping</h3>
+        <p>Rooms and all common areas are cleaned and maintained on a regular schedule. You focus on your academics — we keep everything fresh and hygienic.</p>
       </div>
 
-      <div class="why-card fade-up" style="padding: 36px 28px; transition-delay:0.25s">
-        <div class="why-icon" style="font-size:28px; width:64px; height:64px;">🔒</div>
-        <h3 style="font-size:20px; margin-bottom:12px;">Safety & Security</h3>
-        <p>Gated premises with 24/7 security monitoring. All entry and exit points are secured. Residents and parents can rest easy knowing the environment is safe at all times.</p>
+      <div class="facility-card-full fade-up" style="transition-delay:0.25s;">
+        <div class="fc-icon">🔒</div>
+        <h3>Safety & Security</h3>
+        <p>Gated premises with 24/7 security monitoring. All entry and exit points are secured. Residents and parents rest easy knowing the environment is always safe.</p>
       </div>
 
-      <div class="why-card fade-up" style="padding: 36px 28px; transition-delay:0.3s">
-        <div class="why-icon" style="font-size:28px; width:64px; height:64px;">💡</div>
-        <h3 style="font-size:20px; margin-bottom:12px;">Power Backup</h3>
+      <div class="facility-card-full fade-up" style="transition-delay:0.3s;">
+        <div class="fc-icon">💡</div>
+        <h3>Power Backup</h3>
         <p>Uninterrupted power supply ensures your devices stay charged and your studies are never interrupted — even during power cuts.</p>
       </div>
 
-      <div class="why-card fade-up" style="padding: 36px 28px; transition-delay:0.35s">
-        <div class="why-icon" style="font-size:28px; width:64px; height:64px;">💧</div>
-        <h3 style="font-size:20px; margin-bottom:12px;">Drinking Water</h3>
-        <p>Clean, filtered drinking water is available throughout the day across the property. Hygiene and health are always a priority at Falimees.</p>
+      <div class="facility-card-full fade-up" style="transition-delay:0.35s;">
+        <div class="fc-icon">💧</div>
+        <h3>Drinking Water</h3>
+        <p>Clean, filtered drinking water available throughout the day across the property. Hygiene and health are always a priority at Falimees.</p>
       </div>
 
-      <div class="why-card fade-up" style="padding: 36px 28px; transition-delay:0.4s">
-        <div class="why-icon" style="font-size:28px; width:64px; height:64px;">📚</div>
-        <h3 style="font-size:20px; margin-bottom:12px;">Study-Friendly Environment</h3>
-        <p>Quiet spaces designed for deep focus. Good lighting, reliable power, and fast Wi-Fi — the ideal setup for students who take their academics seriously.</p>
+      <div class="facility-card-full fade-up" style="transition-delay:0.4s;">
+        <div class="fc-icon">📚</div>
+        <h3>Study-Friendly Environment</h3>
+        <p>Quiet, well-lit spaces designed for deep focus. Good lighting, reliable power, and fast Wi-Fi — the ideal setup for academic success.</p>
       </div>
 
-      <div class="why-card fade-up" style="padding: 36px 28px; transition-delay:0.45s">
-        <div class="why-icon" style="font-size:28px; width:64px; height:64px;">🧑‍💼</div>
-        <h3 style="font-size:20px; margin-bottom:12px;">Resident Support</h3>
-        <p>A dedicated management team is available to assist residents with day-to-day needs, maintenance requests, and any concerns — ensuring smooth, stress-free living.</p>
+      <div class="facility-card-full fade-up" style="transition-delay:0.45s;">
+        <div class="fc-icon">🧑‍💼</div>
+        <h3>Resident Support</h3>
+        <p>A dedicated team available to help with day-to-day needs, maintenance requests, and concerns. Smooth, stress-free living — always.</p>
       </div>
 
-      <div class="why-card fade-up" style="padding: 36px 28px; transition-delay:0.5s">
-        <div class="why-icon" style="font-size:28px; width:64px; height:64px;">🤝</div>
-        <h3 style="font-size:20px; margin-bottom:12px;">Community Spaces</h3>
-        <p>Shared common areas for students to relax, socialize, and connect. Building friendships is just as important as building a career, and Falimees supports both.</p>
+      <div class="facility-card-full fade-up" style="transition-delay:0.5s;">
+        <div class="fc-icon">🤝</div>
+        <h3>Community Spaces</h3>
+        <p>Shared common areas for students to relax, connect, and socialise. Building friendships is part of the Falimees experience.</p>
       </div>
 
-      <div class="why-card fade-up" style="padding: 36px 28px; transition-delay:0.55s; background: var(--brand-green-pale); border-color: var(--brand-green-light);">
-        <div class="why-icon" style="font-size:28px; width:64px; height:64px; background: var(--brand-green);">📞</div>
-        <h3 style="font-size:20px; margin-bottom:12px;">Parent Communication</h3>
-        <p>We maintain open lines of communication with parents. Transparent management means families are always informed and reassured about their child's wellbeing.</p>
+      <div class="facility-card-full fade-up" style="transition-delay:0.55s;background:var(--brand-green-pale);border-color:var(--brand-green-light);">
+        <div class="fc-icon">📞</div>
+        <h3>Parent Communication</h3>
+        <p>We maintain open lines with parents. Transparent management means families are always informed and reassured about their child's wellbeing.</p>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section style="padding: 80px 0; background: var(--text); text-align: center;">
+<section class="cta-section">
   <div class="container">
-    <div class="section-tag" style="background: rgba(164,214,94,0.15); color: var(--brand-green);">Ready?</div>
-    <h2 class="section-title" style="color: white; margin-bottom: 16px;">Experience It For Yourself</h2>
-    <p style="color: rgba(255,255,255,0.6); font-size: 16px; max-width: 480px; margin: 0 auto 32px; line-height: 1.7;">Come see Falimees in person or get in touch to learn more about availability and pricing.</p>
-    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-      <a href="contact.html" class="btn-primary">Book a Visit →</a>
-      <a href="rooms.html" class="btn-secondary" style="color: rgba(255,255,255,0.7); border-color: rgba(255,255,255,0.2);">View Rooms</a>
+    <div class="cta-inner fade-up">
+      <div class="section-tag">Come See It Yourself</div>
+      <h2 class="section-title">Experience Falimees Firsthand</h2>
+      <p>Come visit us and see all our facilities in person. We'd love to show you around.</p>
+      <div class="cta-buttons">
+        <a href="tel:+919249048620" class="btn-call"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>Call Now</a>
+        <a href="https://wa.me/919249048620" class="btn-whatsapp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>WhatsApp Us</a>
+        <a href="contact.html" class="btn-primary">Book a Visit →</a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="images/logo.png" alt="Falimees" />
-        <p>Premium student accommodation built for comfort, convenience, and community in Kerala.</p>
-        <div class="social-links">
-          <a href="https://www.instagram.com/falimees/" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/company/falimees/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="https://www.facebook.com/share/1MpvX8Ycaa/" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          </a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>Navigate</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="facilities.html">Facilities</a></li>
-          <li><a href="rooms.html">Rooms</a></li>
-          <li><a href="community.html">Community</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="facilities.html">Furnished Rooms</a></li>
-          <li><a href="facilities.html">High-Speed Wi-Fi</a></li>
-          <li><a href="facilities.html">Food & Mess</a></li>
-          <li><a href="facilities.html">Laundry Service</a></li>
-          <li><a href="facilities.html">Housekeeping</a></li>
-          <li><a href="facilities.html">Security</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:hello@falimees.com">hello@falimees.com</a></li>
-          <li><a href="tel:+91XXXXXXXXXX">+91 XXXX XXX XXX</a></li>
-          <li><a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp Us</a></li>
-          <li><a href="contact.html">Get Directions</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 Falimees. All rights reserved.</p>
-      <div class="footer-tagline">Everything You Need. Everyone You Need.</div>
-    </div>
-  </div>
-</footer>
-
-<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-</a>
-
+<footer class="footer"><div class="container"><div class="footer-grid"><div><img src="images/logo.png" alt="Falimees" class="footer-brand-img" /><p class="footer-brand">Everything You Need. Everyone You Need.</p><div class="social-links" style="margin-top:14px;"><a href="https://www.instagram.com/falimees/" class="social-link" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a><a href="https://www.linkedin.com/company/falimees/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a><a href="https://www.facebook.com/share/1MpvX8Ycaa/" class="social-link" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a></div></div><div class="footer-col"><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="rooms.html">Rooms</a></li><li><a href="facilities.html">Facilities</a></li><li><a href="community.html">Community</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-col"><h4>Services</h4><ul><li><a href="facilities.html">Furnished Rooms</a></li><li><a href="facilities.html">High-Speed Wi-Fi</a></li><li><a href="facilities.html">Food &amp; Mess</a></li><li><a href="facilities.html">Laundry</a></li><li><a href="facilities.html">Security</a></li></ul></div><div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:falimeeshostel@gmail.com">falimeeshostel@gmail.com</a></li><li><a href="tel:+919249048620">+91 924 904 8620</a></li><li><a href="https://wa.me/919249048620" target="_blank" rel="noopener">WhatsApp Us</a></li><li><a href="contact.html">Get Directions</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2025 Falimees. All rights reserved.</p><div class="footer-tagline">Everything You Need. Everyone You Need.</div></div></div></footer>
+<a href="https://wa.me/919249048620" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
 <script src="js/main.js"></script>
 </body>
 </html>

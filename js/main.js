@@ -1,25 +1,42 @@
-// ===== FALIMEES MAIN JS =====
-
+// ===== FALIMEES MAIN JS v2 =====
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ── Navbar scroll effect ──
+  // ── Navbar scroll ──
   const navbar = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 20);
-  });
+  if (navbar) {
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+  }
 
-  // ── Mobile menu toggle ──
+  // ── Mobile menu ──
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
   if (hamburger && mobileMenu) {
     hamburger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('open');
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
     });
-    // Close on link click
     mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
     });
   }
+
+  // ── Life at Falimees tabs ──
+  const tabs = document.querySelectorAll('.life-tab');
+  const panels = document.querySelectorAll('.life-panel');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      const target = document.getElementById(tab.dataset.panel);
+      if (target) target.classList.add('active');
+    });
+  });
 
   // ── FAQ accordion ──
   document.querySelectorAll('.faq-q').forEach(btn => {
@@ -31,39 +48,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ── Intersection Observer for fade-up animations ──
+  // ── Fade-up on scroll ──
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        // Stagger children
-        const children = entry.target.querySelectorAll('.fade-up-child');
-        children.forEach((child, i) => {
-          setTimeout(() => child.classList.add('visible'), i * 100);
-        });
+        observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1 });
-
+  }, { threshold: 0.12 });
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-  // ── Contact form ──
-  const contactForm = document.getElementById('contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const btn = contactForm.querySelector('button[type="submit"]');
-      btn.textContent = '✓ Message Sent!';
-      btn.style.background = '#4CAF50';
-      setTimeout(() => {
-        btn.textContent = 'Send Message';
-        btn.style.background = '';
-        contactForm.reset();
-      }, 3000);
-    });
-  }
-
-  // ── Active nav link based on current page ──
+  // ── Active nav link ──
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a').forEach(link => {
     const href = link.getAttribute('href');
@@ -71,5 +67,22 @@ document.addEventListener('DOMContentLoaded', () => {
       link.classList.add('active');
     }
   });
+
+  // ── Contact form ──
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const btn = contactForm.querySelector('button[type="submit"]');
+      const original = btn.textContent;
+      btn.textContent = '✓ Message Sent!';
+      btn.style.background = '#4CAF50';
+      setTimeout(() => {
+        btn.textContent = original;
+        btn.style.background = '';
+        contactForm.reset();
+      }, 3000);
+    });
+  }
 
 });
